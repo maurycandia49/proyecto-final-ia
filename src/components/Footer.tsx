@@ -48,15 +48,15 @@ const Footer = () => {
               Dev<span className="text-accent">.</span>
             </h3>
             <p className="text-gray-400 text-sm">
-              Construyendo hermosas experiencias digitales con código y creatividad.
+              Building beautiful digital experiences with code and creativity.
             </p>
           </motion.div>
 
           {/* Quick Links */}
           <motion.div variants={itemVariants}>
-            <h4 className="font-semibold mb-4">Enlaces Rápidos</h4>
+            <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              {['Inicio', 'Sobre Mí', 'Habilidades', 'Proyectos', 'Contacto'].map((link) => (
+              {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((link) => (
                 <li key={link}>
                   <a
                     href={`#${link.toLowerCase()}`}
@@ -71,7 +71,7 @@ const Footer = () => {
 
           {/* Social Links */}
           <motion.div variants={itemVariants}>
-            <h4 className="font-semibold mb-4">Conectar</h4>
+            <h4 className="font-semibold mb-4">Connect</h4>
             <div className="flex gap-4">
               {socialLinks.map((social, index) => {
                 const Icon = social.icon
@@ -105,22 +105,22 @@ const Footer = () => {
         >
           {/* Copyright */}
           <div className="text-sm text-gray-500 flex items-center gap-1">
-            <span>© {currentYear} Dev. Todos los derechos reservados.</span>
+            <span>© {currentYear} Dev. All rights reserved.</span>
           </div>
 
           {/* Made with love */}
           <div className="text-sm text-gray-500 flex items-center gap-1">
-            Made with <HiHeart className="text-red-500 animate-pulse" /> para desarrolladores
+            Made with <HiHeart className="text-red-500 animate-pulse" /> for developers
           </div>
 
           {/* Bottom Links */}
           <div className="flex gap-4 text-sm">
             <a href="#" className="text-gray-500 hover:text-accent transition-colors duration-300">
-              Privacidad
+              Privacy
             </a>
             <span className="text-gray-700">•</span>
             <a href="#" className="text-gray-500 hover:text-accent transition-colors duration-300">
-              Términos
+              Terms
             </a>
           </div>
         </motion.div>

@@ -3,19 +3,19 @@ import { motion } from 'framer-motion'
 const Skills = () => {
   const skillCategories = [
     {
-      category: 'Desarrollo Frontend',
+      category: 'Frontend Development',
       skills: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js', 'Vue.js', 'Redux'],
     },
     {
-      category: 'Desarrollo Backend',
+      category: 'Backend Development',
       skills: ['Node.js', 'Express', 'Python', 'PostgreSQL', 'MongoDB', 'REST APIs'],
     },
     {
-      category: 'Marketing Digital',
+      category: 'Digital Marketing',
       skills: ['SEO', 'SEM', 'Social Media', 'Analytics', 'Content Strategy', 'Email Marketing'],
     },
     {
-      category: 'Herramientas y Plataformas',
+      category: 'Tools & Platforms',
       skills: ['Git', 'Docker', 'AWS', 'Figma', 'Google Analytics', 'CI/CD'],
     },
   ]
@@ -50,7 +50,7 @@ const Skills = () => {
           transition={{ duration: 0.8 }}
           className="section-title text-gradient"
         >
-          Habilidades y Experiencia
+          Skills & Expertise
         </motion.h2>
 
         {/* Skills Grid */}
@@ -96,14 +96,14 @@ const Skills = () => {
           transition={{ delay: 0.6 }}
           className="mt-16 glass-effect p-12 rounded-xl"
         >
-          <h3 className="text-2xl font-bold mb-8 text-center text-accent">Nivel de Competencia</h3>
+          <h3 className="text-2xl font-bold mb-8 text-center text-accent">Proficiency Level</h3>
           
           <div className="space-y-8">
             {[
-              { name: 'Desarrollo Web', level: 95 },
-              { name: 'Marketing Digital', level: 90 },
-              { name: 'Diseño UI/UX', level: 85 },
-              { name: 'Análisis de Datos', level: 80 },
+              { name: 'Web Development', level: 95 },
+              { name: 'Digital Marketing', level: 90 },
+              { name: 'UI/UX Design', level: 85 },
+              { name: 'Data Analysis', level: 80 },
             ].map((skill, index) => (
               <motion.div
                 key={index}

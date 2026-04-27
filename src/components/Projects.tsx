@@ -5,8 +5,8 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Plataforma de Comercio Electrónico',
-      description: 'Solución completa de comercio electrónico con frontend React, backend Node.js e integración de Stripe.',
+      title: 'E-Commerce Platform',
+      description: 'Full-stack e-commerce solution with React frontend, Node.js backend, and Stripe integration.',
       tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
       image: '🛍️',
       live: '#',
@@ -15,8 +15,8 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'Panel de Estadísticas',
-      description: 'Panel de análisis en tiempo real con visualización de datos y gestión de usuarios.',
+      title: 'Analytics Dashboard',
+      description: 'Real-time analytics dashboard with data visualization and user management.',
       tags: ['React', 'Chart.js', 'PostgreSQL', 'Express'],
       image: '📊',
       live: '#',
@@ -25,8 +25,8 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: 'Campaña de Redes Sociales',
-      description: 'Campaña integrada de marketing digital que resultó en un aumento del ROI del 300%.',
+      title: 'Social Media Campaign',
+      description: 'Integrated digital marketing campaign resulting in 300% ROI increase.',
       tags: ['SEO', 'SEM', 'Content Marketing', 'Analytics'],
       image: '📱',
       live: '#',
@@ -35,8 +35,8 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: 'Aplicación de Gestión de Tareas',
-      description: 'Aplicación colaborativa de gestión de tareas con actualizaciones en tiempo real.',
+      title: 'Task Management App',
+      description: 'Collaborative task management application with real-time updates.',
       tags: ['React', 'Firebase', 'Tailwind CSS', 'Redux'],
       image: '✅',
       live: '#',
@@ -45,8 +45,8 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: 'Generador de Contenidos AI',
-      description: 'Herramienta de generación de contenidos impulsada por IA para profesionales de marketing.',
+      title: 'AI Content Generator',
+      description: 'AI-powered content generation tool for marketing professionals.',
       tags: ['Next.js', 'Python', 'OpenAI API', 'PostgreSQL'],
       image: '🤖',
       live: '#',
@@ -55,8 +55,8 @@ const Projects = () => {
     },
     {
       id: 6,
-      title: 'Optimización de Marca',
-      description: 'Proyecto integral de estrategia de marca y optimización de sitio web.',
+      title: 'Brand Optimization',
+      description: 'Comprehensive brand strategy and website optimization project.',
       tags: ['UX/UI', 'Branding', 'Optimization', 'Marketing'],
       image: '🎨',
       live: '#',
@@ -98,7 +98,7 @@ const Projects = () => {
           transition={{ duration: 0.8 }}
           className="section-title text-gradient"
         >
-          Proyectos Destacados
+          Featured Projects
         </motion.h2>
 
         {/* Featured Projects */}
@@ -151,13 +151,13 @@ const Projects = () => {
                     href={project.live}
                     className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-accent/10 text-accent rounded-lg hover:bg-accent hover:text-dark transition-colors duration-300"
                   >
-                    <HiExternalLink /> En Vivo
+                    <HiExternalLink /> Live
                   </a>
                   <a
                     href={project.code}
                     className="flex-1 flex items-center justify-center gap-2 px-4 py-2 border border-accent/50 text-accent rounded-lg hover:bg-accent/10 transition-colors duration-300"
                   >
-                    <HiCode /> Código
+                    <HiCode /> Code
                   </a>
                 </div>
               </div>
@@ -172,7 +172,7 @@ const Projects = () => {
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
         >
-          <h3 className="text-3xl font-bold mb-8 text-center">Otros Proyectos</h3>
+          <h3 className="text-3xl font-bold mb-8 text-center">Other Projects</h3>
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -222,7 +222,7 @@ const Projects = () => {
             whileTap={{ scale: 0.95 }}
             className="btn-primary"
           >
-            Ver Todos los Proyectos
+            View All Projects
           </motion.button>
         </motion.div>
       </div>

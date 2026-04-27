@@ -34,20 +34,20 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: HiMail,
-      label: 'Correo Electrónico',
-      value: 'maurycandia49@gmail.com',
+      label: 'Email',
+      value: 'hello@example.com',
       link: 'mailto:hello@example.com',
     },
     {
       icon: HiPhone,
-      label: 'Teléfono',
-      value: '+54 9 11 57569391',
-      link: 'tel:+5491157569391',
+      label: 'Phone',
+      value: '+1 (555) 123-4567',
+      link: 'tel:+15551234567',
     },
     {
       icon: HiLocationMarker,
-      label: 'Ubicación',
-      value: 'Buenos Aires, Argentina',
+      label: 'Location',
+      value: 'San Francisco, USA',
       link: '#',
     },
   ]
@@ -82,7 +82,7 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
           className="section-title text-gradient"
         >
-          Ponte en Contacto
+          Get In Touch
         </motion.h2>
 
         {/* Contact Info */}
@@ -133,7 +133,7 @@ const Contact = () => {
                 viewport={{ once: true }}
                 transition={{ delay: 0.1 }}
               >
-                <label className="block text-sm font-medium mb-2">Nombre Completo</label>
+                <label className="block text-sm font-medium mb-2">Full Name</label>
                 <input
                   type="text"
                   name="name"
@@ -141,7 +141,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:border-accent focus:outline-none transition-colors duration-300 text-white placeholder-gray-500"
-                  placeholder="Tu nombre"
+                  placeholder="Your name"
                 />
               </motion.div>
 
@@ -152,7 +152,7 @@ const Contact = () => {
                 viewport={{ once: true }}
                 transition={{ delay: 0.1 }}
               >
-                <label className="block text-sm font-medium mb-2">Dirección de Correo</label>
+                <label className="block text-sm font-medium mb-2">Email Address</label>
                 <input
                   type="email"
                   name="email"
@@ -160,7 +160,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:border-accent focus:outline-none transition-colors duration-300 text-white placeholder-gray-500"
-                  placeholder="tu@email.com"
+                  placeholder="your@email.com"
                 />
               </motion.div>
             </div>
@@ -173,7 +173,7 @@ const Contact = () => {
               transition={{ delay: 0.2 }}
               className="mb-6"
             >
-              <label className="block text-sm font-medium mb-2">Asunto</label>
+              <label className="block text-sm font-medium mb-2">Subject</label>
               <input
                 type="text"
                 name="subject"
@@ -181,7 +181,7 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:border-accent focus:outline-none transition-colors duration-300 text-white placeholder-gray-500"
-                placeholder="¿De qué trata?"
+                placeholder="What's this about?"
               />
             </motion.div>
 
@@ -193,7 +193,7 @@ const Contact = () => {
               transition={{ delay: 0.2 }}
               className="mb-8"
             >
-              <label className="block text-sm font-medium mb-2">Mensaje</label>
+              <label className="block text-sm font-medium mb-2">Message</label>
               <textarea
                 name="message"
                 value={formData.message}
@@ -201,7 +201,7 @@ const Contact = () => {
                 required
                 rows={5}
                 className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:border-accent focus:outline-none transition-colors duration-300 text-white placeholder-gray-500 resize-none"
-                placeholder="Tu mensaje aquí..."
+                placeholder="Your message here..."
               ></textarea>
             </motion.div>
 
@@ -219,7 +219,7 @@ const Contact = () => {
                 type="submit"
                 className="flex-1 btn-primary"
               >
-                {isSubmitted ? '✓ ¡Mensaje Enviado!' : 'Enviar Mensaje'}
+                {isSubmitted ? '✓ Message Sent!' : 'Send Message'}
               </motion.button>
             </motion.div>
 
@@ -231,7 +231,7 @@ const Contact = () => {
                 exit={{ opacity: 0, y: -10 }}
                 className="mt-4 p-4 bg-green-500/10 border border-green-500/50 rounded-lg text-green-400 text-center"
               >
-                ¡Gracias por tu mensaje! Me pondrá en contacto pronto.
+                Thank you for your message! I'll get back to you soon.
               </motion.div>
             )}
           </motion.form>

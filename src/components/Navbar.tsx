@@ -11,11 +11,11 @@ const Navbar = ({ activeNav, setActiveNav }: NavbarProps) => {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
-    { name: 'Inicio', id: 'home' },
-    { name: 'Sobre Mí', id: 'about' },
-    { name: 'Habilidades', id: 'skills' },
-    { name: 'Proyectos', id: 'projects' },
-    { name: 'Contacto', id: 'contact' },
+    { name: 'Home', id: 'home' },
+    { name: 'About', id: 'about' },
+    { name: 'Skills', id: 'skills' },
+    { name: 'Projects', id: 'projects' },
+    { name: 'Contact', id: 'contact' },
   ]
 
   const handleNavClick = (id: string) => {
@@ -38,7 +38,7 @@ const Navbar = ({ activeNav, setActiveNav }: NavbarProps) => {
           whileHover={{ scale: 1.05 }}
           className="text-2xl font-bold text-gradient cursor-pointer"
         >
-          MauriDev<span className="text-accent">.</span>
+          Dev<span className="text-accent">.</span>
         </motion.div>
 
         {/* Desktop Navigation */}
@@ -69,7 +69,7 @@ const Navbar = ({ activeNav, setActiveNav }: NavbarProps) => {
           onClick={() => handleNavClick('contact')}
           className="hidden md:block btn-primary"
         >
-          Ponte en Contacto
+          Get in Touch
         </motion.button>
 
         {/* Mobile menu button */}
@@ -108,7 +108,7 @@ const Navbar = ({ activeNav, setActiveNav }: NavbarProps) => {
               onClick={() => handleNavClick('contact')}
               className="w-full btn-primary mt-4"
             >
-              Ponte en Contacto
+              Get in Touch
             </motion.button>
           </div>
         </motion.div>

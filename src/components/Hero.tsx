@@ -34,17 +34,17 @@ const Hero = () => {
           {/* Greeting Badge */}
           <motion.div variants={itemVariants} className="inline-block mb-8">
             <div className="glass-effect px-6 py-2 rounded-full">
-              <p className="text-sm text-accent font-medium">Bienvenido a mi portafolio</p>
+              <p className="text-sm text-accent font-medium">Welcome to my portfolio</p>
             </div>
           </motion.div>
 
           {/* Main Heading */}
           <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl font-bold mb-6">
-            Desarrollador Full Stack &
+            Full Stack Developer &
             <br />
-            <span className="text-gradient">Marketing Digital</span>
+            <span className="text-gradient">Digital Marketing</span>
             <br />
-            Especialista
+            Specialist
           </motion.h1>
 
           {/* Subheading */}
@@ -52,7 +52,7 @@ const Hero = () => {
             variants={itemVariants}
             className="text-xl md:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed"
           >
-            Creo experiencias web hermosas y responsivas y diseño campañas estratégicas de marketing digital que generan resultados reales. Construyamos algo increíble juntos.
+            I create beautiful, responsive web experiences and craft strategic digital marketing campaigns that drive real results. Let's build something amazing together.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -65,14 +65,14 @@ const Hero = () => {
               whileTap={{ scale: 0.95 }}
               className="btn-primary"
             >
-              Ver Mi Trabajo
+              View My Work
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="btn-secondary"
             >
-              Descargar CV
+              Download Resume
             </motion.button>
           </motion.div>
 

@@ -22,26 +22,26 @@ const About = () => {
   }
 
   const stats = [
-    { label: 'Proyectos Completados', value: '50+' },
-    { label: 'Clientes Felices', value: '30+' },
-    { label: 'Años de Experiencia', value: '5+' },
+    { label: 'Projects Completed', value: '50+' },
+    { label: 'Happy Clients', value: '30+' },
+    { label: 'Years Experience', value: '5+' },
   ]
 
   const highlights = [
     {
       icon: HiCode,
-      title: 'Desarrollo Full Stack',
-      description: 'Construyendo aplicaciones web robustas con React, Node.js y pilas tecnológicas modernas.',
+      title: 'Full Stack Development',
+      description: 'Building robust web applications with React, Node.js, and modern tech stacks.',
     },
     {
       icon: HiTrendingUp,
-      title: 'Marketing Digital',
-      description: 'Diseñando estrategias basadas en datos para SEO, redes sociales y marketing de contenidos.',
+      title: 'Digital Marketing',
+      description: 'Crafting data-driven strategies for SEO, social media, and content marketing.',
     },
     {
       icon: HiSparkles,
-      title: 'Diseño UI/UX',
-      description: 'Creando interfaces hermosas e intuitivas que los usuarios aman interactuar.',
+      title: 'UI/UX Design',
+      description: 'Creating beautiful, intuitive interfaces that users love to interact with.',
     },
   ]
 
@@ -56,7 +56,7 @@ const About = () => {
           transition={{ duration: 0.8 }}
           className="section-title text-gradient"
         >
-          Sobre Mí
+          About Me
         </motion.h2>
 
         {/* Main Content */}
@@ -69,15 +69,15 @@ const About = () => {
             viewport={{ once: true }}
           >
             <motion.p variants={itemVariants} className="text-lg text-gray-300 mb-6">
-              Soy un apasionado Desarrollador Full Stack y especialista en Marketing Digital con un historial comprobado de construcción de aplicaciones web de alto rendimiento y desarrollo de estrategias exitosas de marketing digital. Mi experiencia abarca tanto desarrollo técnico como marketing estratégico.
+              I'm a passionate Full Stack Developer and Digital Marketing specialist with a proven track record of building high-performance web applications and developing successful digital marketing strategies. My expertise spans both technical development and strategic marketing.
             </motion.p>
 
             <motion.p variants={itemVariants} className="text-lg text-gray-300 mb-6">
-              Con más de 5 años de experiencia, he ayudado a startups y empresas establecidas a alcanzar sus objetivos digitales a través de soluciones innovadoras y enfoques basados en datos.
+              With 5+ years of experience, I've helped startups and established companies achieve their digital goals through innovative solutions and data-driven approaches.
             </motion.p>
 
             <motion.p variants={itemVariants} className="text-lg text-gray-300 mb-8">
-              Cuando no estoy codificando o estrategizando, me encontrarás explorando nuevas tecnologías, contribuyendo a proyectos de código abierto o escribiendo sobre tendencias de desarrollo web.
+              When I'm not coding or strategizing, you'll find me exploring new technologies, contributing to open-source projects, or writing about web development trends.
             </motion.p>
 
             {/* Stats */}
@@ -101,8 +101,8 @@ const About = () => {
           >
             <div className="text-center text-gray-400">
               <div className="text-6xl mb-4">👨‍💻</div>
-              <p>Imagen de Perfil</p>
-              <p className="text-sm mt-2"><img src="../img/dev.png" alt="" /></p>
+              <p>Profile Image</p>
+              <p className="text-sm mt-2">(Replace with actual image)</p>
             </div>
           </motion.div>
         </div>
