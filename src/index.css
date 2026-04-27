@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-darker text-gray-100;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-darker;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-accent rounded-full hover:bg-accent-dark;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section {
+    @apply py-20 md:py-28;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold text-center mb-12;
+  }
+
+  .btn-primary {
+    @apply inline-block px-8 py-3 bg-accent text-dark font-semibold rounded-lg hover:bg-accent-dark transition-colors duration-300;
+  }
+
+  .btn-secondary {
+    @apply inline-block px-8 py-3 border-2 border-accent text-accent font-semibold rounded-lg hover:bg-accent hover:text-dark transition-all duration-300;
+  }
+
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+
+  .glow-accent {
+    @apply shadow-[0_0_30px_rgba(0,212,255,0.3)];
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent to-blue-400 bg-clip-text text-transparent;
+  }
+}
